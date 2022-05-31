@@ -171,7 +171,10 @@ const dataViewApiProxy = function (api: DataviewAPI, currentFilePath: string) {
         },
         date: function (pathlike: string | Link | DateTime): DateTime | null {
             return api.date(pathlike);
-        }
+        },
+		luxon: function () {
+			return api.luxon
+		}
     }
 };
 
